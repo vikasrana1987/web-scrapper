@@ -27,26 +27,10 @@
 		catch(Exception $e)
 		{
 			echo 'Caught exception: ',  $e->getMessage(), "\n";
-			// 
 		}
 	}
 	//echo $text;
 	$html = $parser->removeAttributes($html);
 
 	echo $html;
-	
-
-	/* 	$client = new Client();
-	$crawler = $client->request('GET', 'http://cp.demo.netsmartz.us/Users/login');
-
-	// select the form and fill in some values
-	$form = $crawler->selectButton('Login')->form();
-	$form['data[User][user_email]'] = 'ata7@hotmail.com';
-	$form['data[User][password]'] = 'Freakenpm*7';
-
-	// submit that form
-	$crawler = $client->submit($form);
-	$content = $crawler->filter('body');
-	echo $content->html();
-	var_dump($crawler);
- */?>
+	?>
